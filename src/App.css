@@ -27,6 +27,10 @@ h1 {
 	font: normal 72px 'Righteous', cursive;
 }
 
+p {
+	margin-top: 10px;
+}
+
 .container {
 	margin-top: 30px;
 	margin-bottom: 0;
@@ -37,13 +41,20 @@ h1 {
 	list-style-type: none;
 }
 
+section h2 {
+	margin-top: 70px;
+	margin-bottom: 50px;
+	font-size: 42px;
+	color: #763464;
+}
+
 li {
 	margin-bottom: 30px;
 }
 
 .container img {
-	height: 560px;
-	width: 560px;
+	height: 500px;
+	width: 500px;
 }
 
 footer {

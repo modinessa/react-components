@@ -118,11 +118,14 @@ Photos.propTypes = {
 	),
 }
 
-function Main() {
+function Main(props) {
 	return (
-		<section>
-			<Photos data={tracks} />
-		</section>
+		<>
+			<section>
+				{props.children}
+				<Photos data={tracks} />
+			</section>
+		</>
 	)
 }
 
@@ -147,7 +150,9 @@ function Page() {
   return (
 		<>
 			<Header title="Header" />
-			<Main data={tracks} />
+			<Main data={tracks}>
+				<h2>Top 10 albums</h2>
+			</Main>
 			<Footer title="Footer" year={new Date().getFullYear()}/>
 		</>
   );
