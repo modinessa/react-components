@@ -10,7 +10,7 @@ function Page() {
 			<Header title="Header" />
 			<Main data={tracks}>
 				<h2>Top 10 albums</h2>
-				<Photos data={tracks} />
+				<Photos data={tracks} showCount={5} />
 			</Main>
 			<Footer title="Footer" year={new Date().getFullYear()}/>
 		</>
